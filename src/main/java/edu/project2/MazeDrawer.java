@@ -59,11 +59,11 @@ public class MazeDrawer extends JFrame {
         };
         add(panel);
         this.setVisible(true);
-        try {
+        /*try {
             Thread.sleep(timeToMaze);
         } catch (InterruptedException e) {
             System.exit(0);
-        }
+        }*/
 
     }
 }
