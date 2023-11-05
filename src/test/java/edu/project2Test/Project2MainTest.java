@@ -18,7 +18,6 @@ public class Project2MainTest {
             System.out.println("No path");
         }
         MazeDrawer drawer2 = new MazeDrawer(maze, 20, 0);
-
         PrintMaze.render(maze);
         drawer2.setVisible(true);
     }
