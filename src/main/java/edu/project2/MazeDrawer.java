@@ -9,7 +9,7 @@ import javax.swing.JPanel;
 public class MazeDrawer extends JFrame {
     private final Maze maze;
     private final int cellSize;
-    private final static int TIME_SHOW_MAZE = 5000;
+    private final static int TIME_SHOW_MAZE = 1000;
 
     private final static int INDENT = 50;
 
