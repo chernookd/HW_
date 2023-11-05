@@ -16,7 +16,7 @@ public class MazeDrawer extends JFrame {
     public JPanel panel;
 
     @SuppressWarnings("MagicNumber")
-    public MazeDrawer(Maze maze, int cellSize, int time_to_maze) {
+    public MazeDrawer(Maze maze, int cellSize, int timeToMaze) {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
         this.maze = maze;
@@ -60,7 +60,7 @@ public class MazeDrawer extends JFrame {
         add(panel);
         this.setVisible(true);
         try {
-            Thread.sleep(time_to_maze);
+            Thread.sleep(timeToMaze);
         } catch (InterruptedException e) {
             System.exit(0);
         }
