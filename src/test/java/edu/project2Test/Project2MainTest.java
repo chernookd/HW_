@@ -16,7 +16,7 @@ public class Project2MainTest {
         if(!FirstSolverDFS.solve(maze, maze.getRandomPassageCell(), maze.getRandomPassageCell())) {
             System.out.println("No path");
         }
-        MazeDrawer drawer2 = new MazeDrawer(maze, 10);
+        MazeDrawer drawer2 = new MazeDrawer(maze, 10, 100);
         drawer2.setVisible(true);
     }
 
