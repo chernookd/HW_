@@ -16,6 +16,7 @@ public class Task8Test {
 
     @Test
     public void isOddLengthFalseTest() {
+
         assertFalse(Task8.isOddLength("110111"));
         assertFalse(Task8.isOddLength("1101"));
         assertFalse(Task8.isOddLength("001322222220"));
