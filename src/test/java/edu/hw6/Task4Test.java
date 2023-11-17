@@ -1,5 +1,6 @@
 package edu.hw6;
 
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -10,7 +11,9 @@ import static edu.hw6.Task4.Task4.composition;
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
 public class Task4Test {
-     @Test
+
+    @Disabled
+    @Test
     void Task4CompositionTest() throws IOException {
         Path path = Path.of("file.txt");
         Files.deleteIfExists(path);

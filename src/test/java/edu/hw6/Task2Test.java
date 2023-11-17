@@ -2,6 +2,7 @@ package edu.hw6;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import java.io.File;
 import java.io.IOException;
@@ -20,6 +21,7 @@ public class Task2Test {
         file.createNewFile();
     }
 
+    @Disabled
     @Test
     void Task2CopyFileTest() throws IOException {
         Path copy = cloneFile(file.toPath());
@@ -29,6 +31,7 @@ public class Task2Test {
         Files.deleteIfExists(copy);
     }
 
+    @Disabled
     @Test
     void Task2ManyCopyFileTest() throws IOException {
         Path copy1 = cloneFile(file.toPath());

@@ -41,9 +41,6 @@ public class Task5Test {
         assertThat(isContains(38304109, topNewsID)).isTrue();
         assertThat(isContains(38280472, topNewsID )).isTrue();
         assertThat(isContains(38273948, topNewsID )).isTrue();
-        System.out.println(news(700));
-
-        System.out.println(news(700));
 
     }
 

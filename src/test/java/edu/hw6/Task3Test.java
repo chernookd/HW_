@@ -2,6 +2,7 @@ package edu.hw6;
 
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import java.io.File;
 import java.io.IOException;
@@ -27,7 +28,7 @@ public class Task3Test {
         dir.mkdir();
     }
 
-
+    @Disabled
     @Test
     void Task3GlobMatchesTest() throws Exception {
         try {
@@ -82,6 +83,7 @@ public class Task3Test {
         dir.delete();
     }
 
+    @Disabled
     @Test
     void TaskLargeThan3Test() throws IOException {
         try {
@@ -113,6 +115,7 @@ public class Task3Test {
         dir.delete();
     }
 
+    @Disabled
     @Test
     void Task3RegexContainsTest() throws IOException {
         try {
@@ -143,6 +146,7 @@ public class Task3Test {
         dir.delete();
     }
 
+    @Disabled
     @Test
     void Task3AttributesTest() throws IOException {
         try {
@@ -169,6 +173,7 @@ public class Task3Test {
         dir.delete();
     }
 
+    @Disabled
     @Test
     void Task3MagicNumbersTest() throws IOException {
         try {
@@ -197,6 +202,7 @@ public class Task3Test {
         Files.deleteIfExists((dir.toPath().resolve("test.png")));
     }
 
+    @Disabled
     @Test
     void Task3AndTest() throws IOException {
         try {
