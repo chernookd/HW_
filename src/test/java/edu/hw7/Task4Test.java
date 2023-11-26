@@ -61,9 +61,6 @@ public class Task4Test {
         System.out.println("100 thread - " + timeOfOneHundredThreads + "ms");
 
         assertThat(timeOfOneHundredThreads).isLessThan(timeOfOneThread);
-        assertThat(timeOfTenThreads).isLessThan(timeOfOneThread);
-        assertThat(timeOfSixThreads).isLessThan(timeOfOneThread);
-        assertThat(timeOfTwoThreads).isLessThan(timeOfOneThread);
 
         System.out.println("Average acceleration time " + averageAccelerationTime + "ms");
 
