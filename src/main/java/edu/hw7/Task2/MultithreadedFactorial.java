@@ -17,4 +17,5 @@ public class MultithreadedFactorial {
 
         return list.parallelStream().reduce((integer, integer2) -> integer * integer2).orElse(Integer.valueOf(1));
     }
+
 }

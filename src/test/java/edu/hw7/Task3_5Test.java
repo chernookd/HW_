@@ -11,7 +11,7 @@ import java.util.concurrent.TimeUnit;
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
 public class Task3_5Test {
-    
+
     @Test
     void task3_5DatabaseAddDeleteTest() throws InterruptedException {
         Database database = new Database();
@@ -59,4 +59,5 @@ public class Task3_5Test {
             assertThat(database.findByPhone(String.valueOf(i)).size()).isEqualTo(0);
         }
     }
+
 }

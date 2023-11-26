@@ -25,4 +25,5 @@ public class Task1Test {
         assertThat(counter.multiThreadedIncrease(0, 10000)).isEqualTo(10000);
         assertThat(counter.multiThreadedIncrease(-100, 100)).isEqualTo(0);
     }
+
 }

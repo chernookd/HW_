@@ -12,6 +12,7 @@ import java.util.stream.IntStream;
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
 public class Task3Test {
+
     @Test
     void task3DatabaseAddDeleteTest() throws InterruptedException {
         Database database = new Database();
