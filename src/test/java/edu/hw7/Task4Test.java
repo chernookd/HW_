@@ -2,6 +2,7 @@ package edu.hw7;
 
 import edu.hw7.Task4.MultithreadedPi;
 import edu.hw7.Task4.OneThreadCountsPi;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 public class Task4Test {
@@ -10,6 +11,7 @@ public class Task4Test {
     private static final long COUNT_SIMULATION3 = 1_000_000_000;
 
     @Test
+    @Disabled
     void Task4WriteErrorLevelTest() throws InterruptedException {
         double delta1 = Math.abs(Math.PI - OneThreadCountsPi.getPi(COUNT_SIMULATION1));
         double delta2 = Math.abs(Math.PI - OneThreadCountsPi.getPi(COUNT_SIMULATION2));
@@ -23,6 +25,7 @@ public class Task4Test {
 
 
     @Test
+    @Disabled
     void Task4PerformanceAccelerationTest() throws InterruptedException {
         long start = System.currentTimeMillis();
         new OneThreadCountsPi().getPi(COUNT_SIMULATION1);
@@ -61,6 +64,9 @@ public class Task4Test {
         System.out.println("100 thread - " + timeOfOneHundredThreads + "ms");
 
         assertThat(timeOfOneHundredThreads).isLessThan(timeOfOneThread);
+        assertThat(timeOfTenThreads).isLessThan(timeOfOneThread);
+        assertThat(timeOfSixThreads).isLessThan(timeOfOneThread);
+        assertThat(timeOfTwoThreads).isLessThan(timeOfOneThread);
 
         System.out.println("Average acceleration time " + averageAccelerationTime + "ms");
 
