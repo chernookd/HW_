@@ -30,7 +30,6 @@ public class Counter {
                 throw new RuntimeException(e);
             }
         }
-
         return counter.get();
     }
 }

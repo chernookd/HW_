@@ -6,4 +6,5 @@ public class IncThread extends Thread {
     public void run() {
         Counter.counter.addAndGet(1);
     }
+
 }

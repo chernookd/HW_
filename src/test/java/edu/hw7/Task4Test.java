@@ -5,6 +5,7 @@ import edu.hw7.Task4.OneThreadCountsPi;
 import org.junit.jupiter.api.Test;
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 public class Task4Test {
+
     private static final long COUNT_SIMULATION1 = 10_000_000;
     private static final long COUNT_SIMULATION2 = 100_000_000;
     private static final long COUNT_SIMULATION3 = 1_000_000_000;

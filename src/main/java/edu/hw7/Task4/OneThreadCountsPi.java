@@ -5,6 +5,7 @@ import java.util.concurrent.ThreadLocalRandom;
 @SuppressWarnings("HideUtilityClassConstructor")
 public class OneThreadCountsPi {
 
+
     private static long totalCount;
 
     private static long circleCount = 0;

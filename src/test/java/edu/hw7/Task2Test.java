@@ -31,4 +31,5 @@ public class Task2Test {
             Arguments.of(5, 120),
             Arguments.of(6, 720));
     }
+
 }

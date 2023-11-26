@@ -8,13 +8,12 @@ import java.util.List;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
-import java.util.stream.IntStream;
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
-public class Task3Test {
+public class Task3_5Test {
 
     @Test
-    void task3DatabaseAddDeleteTest() throws InterruptedException {
+    void task3_5DatabaseAddDeleteTest() throws InterruptedException {
         Database database = new Database();
         ExecutorService executorService = Executors.newFixedThreadPool(6);
         ExecutorService executorServiceSecond = Executors.newFixedThreadPool(6);

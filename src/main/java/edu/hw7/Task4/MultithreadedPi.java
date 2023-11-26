@@ -6,6 +6,7 @@ import java.util.concurrent.atomic.AtomicLong;
 @SuppressWarnings("HideUtilityClassConstructor")
 public class MultithreadedPi {
 
+
     private final static int NUM_OF_CORES = 6;
     private static AtomicLong circleCount;
 
