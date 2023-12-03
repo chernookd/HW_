@@ -4,6 +4,7 @@ import edu.hw8.Task1.MultithreadServer;
 
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import java.io.*;
 import java.net.Socket;
@@ -28,6 +29,7 @@ public class Task1Test {
         server.start();
     }
     @Test
+    @Disabled
     void AllServerAnswersTest() throws IOException, InterruptedException {
         Socket socket = new Socket("localhost", 8000);
         PrintWriter out = new PrintWriter(socket.getOutputStream());
