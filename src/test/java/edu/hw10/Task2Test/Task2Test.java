@@ -80,9 +80,12 @@ public class Task2Test {
 
     @AfterAll
     public static void deleteCacheFiles() {
-        for (File file: cacheDir.listFiles()) {
-            if (!file.isDirectory()) {
-                file.delete();
+        File[] files = cacheDir.listFiles();
+        if (files != null || files.length >= 1) {
+            for (File file : files) {
+                if (!file.isDirectory()) {
+                    file.delete();
+                }
             }
         }
     }
